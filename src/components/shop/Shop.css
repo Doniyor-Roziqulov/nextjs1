@@ -1,0 +1,6 @@
+.shop__hero {
+    background-image: url("../../../images/shophero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

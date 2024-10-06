@@ -1,0 +1,8 @@
+.pro__inner {
+    opacity: 0;
+}
+
+.pro__box:hover .pro__inner {
+    opacity: 1;
+    transition: all 0.3s linear;
+}
