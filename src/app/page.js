@@ -1,14 +1,19 @@
+"use client";
 import Hero from "@/components/hero/Hero";
-import Product from "@/components/product/Product";
+import Homes from "@/components/home/Homes";
 import Range from "@/components/range/Range";
+import { useState } from "react";
 
-export default function Home() {
+const Home = () => {
+    const [limit, setLimit] = useState(8);
     return (
         <>
             <Hero />
             <Range />
             <h2 className="text-[40px] font-bold text-center">Our Products</h2>
-            <Product />
+            <Homes limit={limit} setLimit={setLimit} />
         </>
     );
-}
+};
+
+export default Home;
